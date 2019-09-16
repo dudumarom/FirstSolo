@@ -1,3 +1,20 @@
 <head>
-    <title>new title</title>
+  <title>new title</title>
+  <style>
+    .btn-prompt {
+      color: red;
+    }
+  </style>
+  <script>
+    let btnClicked = function() {
+      alert('hi');
+    }
+    window.onload = function() {
+      let btn = document.querySelector('.btn-prompt');
+      btn.addEventListener('click', btnClicked);
+    }
+  </script>
 </head>
+<body>
+  <button class="btn-prompt">prompt HEllo Mihai</button>
+</body>
